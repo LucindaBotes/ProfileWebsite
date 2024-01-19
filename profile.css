@@ -1,0 +1,14 @@
+.profile-description {
+    display: flex;
+}
+
+.profile-picture {
+    margin-top: 10%;
+    width: 350px; /* Adjust the width as needed */
+    height: 350px; /* Adjust the height as needed */
+    border-radius: 50%; /* Rounds the profile picture */
+}
+
+.profile-description > article{
+    margin: 30% auto auto 5%;
+}
