@@ -11,7 +11,7 @@ body {
     font-size: 1.8rem;
     background-color: #f9f9f9;
     color: #4a4a4a;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 main {
@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 
   img {
     height: auto;
-    max-width: 100%;
-    margin-top: 0px;
-    margin-bottom: 2.5rem;
+    max-width: 90%;
+    margin: 5% 0 0 10%;
+    border-radius: 16px;
   }
