@@ -24,3 +24,12 @@
     outline-style: solid;
     outline-width: 2px;
   }
+
+  /* button positioning styles */
+  .button-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10% 0 0 10%;
+  }
