@@ -1,3 +1,11 @@
+:root {
+  --backgroundColour: #09061a;
+  --textColour: #b0abb1e3;
+  --primaryColour: #b98ea7;
+  --secondaryColour: #302f4d;
+  --accentColour: #a57982;
+}
+
 html {
     all: unset;
     font-size: 62.5%;
@@ -9,8 +17,8 @@ body {
     grid-template-rows: 1;
     grid-template-columns: 2;
     font-size: 1.8rem;
-    background-color: #f9f9f9;
-    color: #4a4a4a;
+    background-color: var(--backgroundColour);
+    color: var(--textColour);
     overflow-x: hidden;
 }
 
@@ -65,18 +73,18 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   hr {
-    border-color: #1d7484;
+    border-color: var(--primaryColour);
   }
   
   a {
     text-decoration: none;
-    color: #1d7484;
+    color: var(--textColour);
   }
   a:visited {
-    color: #144f5a;
+    color: var(--accentColour);
   }
   a:hover {
-    color: #982c61;
+    color: var(--primaryColour);
     border-bottom: 2px solid #4a4a4a;
   }
   
@@ -96,6 +104,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 100%;
     margin: 2% 0 ;
     border-radius: 16px;
+    filter: brightness(0.8);
   }
 
 @media screen and (max-width: 500px) {
