@@ -1,18 +1,18 @@
-.corner-frame {
+.border {
     position: relative;
     padding: 5%;
     margin-top: 5%;
   }
 
-  .corner-frame::before,
-  .corner-frame::after {
+  .border::before,
+  .border::after {
     content: '';
     position: absolute;
     border: 2px solid #000;
     pointer-events: none;
   }
 
-  .corner-frame::before {
+  .border::before {
     border-bottom: none;
     border-right: none;
     top: 0;
@@ -21,7 +21,7 @@
     height: clamp(100px, 150px, 35%);
   }
 
-  .corner-frame::after {
+  .border::after {
     border-top: none;
     border-left: none;
     bottom: 0;
@@ -31,13 +31,13 @@
   }
   
   @media screen and (max-width: 500px) {
-    .corner-frame {
+    .border {
       margin: 0;
       padding: 0;
     }
 
-    .corner-frame::before,
-    .corner-frame::after {
+    .border::before,
+    .border::after {
       display: none;
     }
   }
