@@ -13,8 +13,8 @@
   }
 
   .corner-frame::before {
-    border-bottom: 0;
-    border-right: 0;
+    border-bottom: none;
+    border-right: none;
     top: 0;
     left: 0;
     width: clamp(100px, 150px, 35%);
@@ -22,10 +22,22 @@
   }
 
   .corner-frame::after {
-    border-top: 0;
-    border-left: 0;
+    border-top: none;
+    border-left: none;
     bottom: 0;
     right: 0;
     width: clamp(100px, 150px, 35%);
     height: clamp(100px, 150px, 35%);
+  }
+  
+  @media screen and (max-width: 500px) {
+    .corner-frame {
+      margin: 5% 0;
+      padding: 0;
+    }
+
+    .corner-frame::before,
+    .corner-frame::after {
+      display: none;
+    }
   }
