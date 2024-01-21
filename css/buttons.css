@@ -1,6 +1,6 @@
-.button, button {
+button {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     white-space: nowrap;
@@ -11,16 +11,22 @@
     cursor: pointer;
     box-sizing: border-box;
   }
-  .button[disabled], button[disabled] {
+
+  button > a {
+    color: #f9f9f9;
+    text-decoration: none;
+  }
+
+  button[disabled] {
     cursor: default;
     opacity: 0.5;
   }
-  .button:hover, button:hover {
+  button:hover {
     background-color: #982c61;
     color: #f9f9f9;
     outline: 0;
   }
-  .button:focus-visible, button:focus-visible {
+  button:focus-visible {
     outline-style: solid;
     outline-width: 2px;
   }
@@ -31,5 +37,5 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 10% 0 10% 10%;
   }
+

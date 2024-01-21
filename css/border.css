@@ -1,7 +1,7 @@
 .corner-frame {
     position: relative;
     padding: 5%;
-    margin: 10% 0 0 10%;
+    margin-top: 5%;
   }
 
   .corner-frame::before,
