@@ -31,7 +31,6 @@
     outline-width: 2px;
   }
 
-  /* button positioning styles */
   .button-row {
     display: flex;
     flex-direction: row;
@@ -40,3 +39,12 @@
     margin-bottom: 5%;
   }
 
+@media screen and (max-width: 530px) {
+  .button-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .button {
+    width: 100%;
+  }
+}
