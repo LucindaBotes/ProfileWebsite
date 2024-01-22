@@ -17,8 +17,7 @@
     border-right: none;
     top: 0;
     left: 0;
-    width: clamp(100px, 150px, 35%);
-    height: clamp(100px, 150px, 35%);
+    animation: animateBorder 2s normal forwards;
   }
 
   .border::after {
@@ -26,8 +25,7 @@
     border-left: none;
     bottom: 0;
     right: 0;
-    width: clamp(100px, 150px, 35%);
-    height: clamp(100px, 150px, 35%);
+    animation: animateBorder 2s normal forwards;
   }
   
   @media screen and (max-width: 500px) {
@@ -41,3 +39,16 @@
       display: none;
     }
   }
+
+@keyframes animateBorder {
+
+  0% {
+    width: 0;
+    height: 0;
+  }
+
+  100% {
+    width: clamp(100px, 150px, 35%);
+    height: clamp(100px, 150px, 35%);
+  }
+}
