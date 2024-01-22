@@ -19,7 +19,6 @@ body {
     font-size: 1.8rem;
     background-color: var(--backgroundColour);
     color: var(--textColour);
-    overflow-x: hidden;
 }
 
 main {
