@@ -1,10 +1,15 @@
 :root {
-  --backgroundColour: #09061a;
-  --textColour: #b0abb1e3;
-  --primaryColour: #b98ea7;
-  --secondaryColour: #302f4d;
-  --accentColour: #a57982;
+  --backgroundColour: #02020a;
+  --textColour: #e1e2efc4;
+  --primaryColour: #b497d6;
+  --secondaryColour: #05204a;
+  --accentColour: #bfacaa;
 }
+/* #09061a
+#b0abb1e3
+#b98ea7
+#302f4d
+#a57982 */
 
 html {
     all: unset;
@@ -67,24 +72,21 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  
-  small, sub, sup {
-    font-size: 75%;
-  }
-  
+
   hr {
     border-color: var(--primaryColour);
   }
   
   a {
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--textColour);
   }
   a:visited {
-    color: var(--accentColour);
+    color: var(--textColour);
   }
   a:hover {
     color: var(--primaryColour);
+    text-decoration: none;
     border-bottom: 2px solid #4a4a4a;
   }
   
