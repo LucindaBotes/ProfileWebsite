@@ -82,6 +82,12 @@ img {
   filter: brightness(0.8);
 }
 
+.align-c {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
 @media screen and (max-width: 500px) {
     main {
       max-width: 90%;
